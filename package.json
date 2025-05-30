@@ -1,0 +1,21 @@
+{
+  "name": "mcc-pdf-parser-camelot",
+  "version": "2.0.0",
+  "description": "Extract MCC data from PDF tables using Camelot",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "env PATH=\"/usr/local/bin:/usr/bin:/bin:$PATH\" node src/index.js",
+    "test": "env PATH=\"/usr/local/bin:/usr/bin:/bin:$PATH\" jest",
+    "setup": "pip3 install camelot-py[cv] PyPDF2==2.12.1"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
